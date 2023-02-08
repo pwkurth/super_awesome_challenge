@@ -1,42 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import avatarIcon from "../../assets/navbar/bussinyaak.png";
 import genericLogo from "../../assets/navbar/generic-logo.png";
 
 const Navbar = () => {
+  const [userName] = useState("JB");
+
   return (
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-[#1e2268]">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <nav class="py-3 bg-[#1f4e76]">
+      <div class="flex">
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           target="_blank"
-          class="flex items-center"
+          class="flex items-center mr-0 ml-10 "
         >
-          <img src={genericLogo} class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+          <img src={genericLogo} class="h-6  sm:h-9 pr-2" alt="Flowbite Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Best Website Ever
           </span>
         </a>
-        <div class="flex items-center md:order-2">
-          <button
-            type="button"
-            class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-900"
-            id="user-menu-button"
-            aria-expanded="false"
-            data-dropdown-toggle="user-dropdown"
-            data-dropdown-placement="bottom"
-          >
-            <span class="sr-only">Open user menu</span>
-            <img
-              class="w-12 h-12 rounded-full"
-              src={avatarIcon}
-              alt="JB Killing It"
-            />
-          </button>
-
-          <div
-            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-            id="user-dropdown"
-          ></div>
+        <a href="/home" class="flex items-center ml-10 mr-10">
+          <span class="self-center text-xl whitespace-nowrap dark:text-white">
+            Home
+          </span>
+        </a>
+        <a href="/about" class="flex items-center ml-0 mr-10">
+          <span class="self-center text-xl whitespace-nowrap dark:text-white">
+            About
+          </span>
+        </a>
+        <div class="flex items-center ml-auto mr-4">
+          <span class="self-center text-xl whitespace-nowrap dark:text-white">
+            Hello, {userName}
+          </span>
+        </div>
+        <div class="flex items-center ml-0 mr-10 ">
+          <img
+            class="w-12 h-12 rounded-full"
+            src={avatarIcon}
+            alt="JB Killing It"
+          />
         </div>
       </div>
     </nav>
