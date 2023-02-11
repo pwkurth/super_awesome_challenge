@@ -1,25 +1,35 @@
 import React from "react";
 import DocumentCartoon from "../../assets/home/document-cartoon.png";
+import CardLoader from "../../components/cards/cardloader";
 
 const About = () => {
   return (
     <div class="bg-green-100 mt-16 mr-16 ml-16 shadow-md">
-      <div class="flex flex-row">
-        <div class="basis-2/4 p-20">
-          <p class=" text-2xl font-poppins">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
-            nulla porttitor massa id neque aliquam vestibulum morbi. Enim
-            facilisis gravida neque convallis a cras. Quis vel eros donec ac
-            odio tempor orci. Orci a scelerisque purus semper eget duis at
-            tellus at.
-          </p>
+      <div class="grid grid-cols-3 gap-4 h-full place-items-center">
+        <div>
+          <CardLoader
+            firstName={"Joe"}
+            lastName={"Doe"}
+            funFact={
+              'Clans of long ago that wanted to get rid of unwanted people without killing them used to burn their houses down -- hence the expression "to get fired"'
+            }
+            favNumber={18}
+          />
         </div>
-        <div class="basis-1/2 ">
-          <img
-            class="md:container md:mx-auto object-contain p-20"
-            src={DocumentCartoon}
-            alt={"Document Cartoon"}
+        <div>
+          <CardLoader
+            firstName={"Furi"}
+            lastName={"Onik"}
+            funFact={`Avocados are a fruit, not a vegetable. They're technically considered a single-seeded berry, believe it or not.`}
+            favNumber={27}
+          />
+        </div>
+        <div>
+          <CardLoader
+            firstName={"Jane"}
+            lastName={"Doe"}
+            funFact={`Japan has over 200 flavours of Kit Kats. They're exclusively created for different regions, cities, and seasons. There are some tasty-sounding ones like banana, blueberry cheesecake and Oreo ice cream, as well as some very questionable ones like baked potato, melon and cheese, wasabi, and vegetable juice.`}
+            favNumber={40}
           />
         </div>
       </div>
