@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentCartoon from "../../assets/home/document-cartoon.png";
+
 import CardLoader from "../../components/cards/cardloader";
 
 const About = () => {
