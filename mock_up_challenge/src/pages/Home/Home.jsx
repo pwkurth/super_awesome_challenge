@@ -3,7 +3,7 @@ import DocumentCartoon from "../../assets/home/document-cartoon.png";
 
 const Home = () => {
   return (
-    <div class="bg-slate-100 mt-16 mr-16 ml-16">
+    <div class="bg-slate-100 mt-16 mr-16 ml-16 shadow-md">
       <div class="flex flex-row">
         <div class="basis-2/4 p-20">
           <p class=" text-2xl font-poppins">
