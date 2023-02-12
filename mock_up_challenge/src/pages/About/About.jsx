@@ -4,7 +4,7 @@ import CardLoader from "../../components/cards/cardloader";
 
 const About = () => {
   return (
-    <div class="bg-green-100 mt-16 mr-16 ml-16 shadow-md">
+    <div class="bg-green-100 h-[32rem] mt-16 mr-16 ml-16 shadow-md">
       <div class="grid grid-cols-3 gap-4 h-full place-items-center">
         <div>
           <CardLoader
