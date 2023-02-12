@@ -6,7 +6,7 @@ const Navbar = () => {
   const [userName] = useState("JB");
 
   return (
-    <nav class="py-3 bg-[#1f4e76]">
+    <nav class="py-3 bg-[#345b7e]">
       <div class="flex">
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
