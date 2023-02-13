@@ -1,9 +1,15 @@
 import React from "react";
+import CSVReader from "../../components/csvreader/CSVReader";
+import useCSVStore from "../../store/CSVStore";
 
 const CSVPage = () => {
+  const csvData = useCSVStore((state) => state.csvData);
+  console.log(csvData.data);
+
   return (
     <div class=" flex mt-16 mr-16 ml-16 shadow-md bg-red-200">
-      <table class="mx-auto w-[95%] text-sm text-left text-gray-500 dark:text-gray-400">
+      <CSVReader />
+      {/* <table class="mx-auto w-[95%] text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th scope="col" class="px-6 py-3">
@@ -55,7 +61,7 @@ const CSVPage = () => {
             <td class="px-6 py-4">$99</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 };
