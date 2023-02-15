@@ -7,8 +7,10 @@ const CSVPage = () => {
   console.log(csvData?.data);
 
   return (
-    <div class=" flex mt-16 mr-16 ml-16 shadow-md bg-red-200">
-      <CSVReader />
+    <div class=" flex mt-16 mr-16 ml-16 shadow-md bg-red-300">
+      <div class="mx-auto bg-white">
+        <CSVReader />
+      </div>
     </div>
   );
 };

@@ -2,9 +2,10 @@ import React from "react";
 
 const CSVTable = (props) => {
   const csvResults = props?.csvResults?.data;
+  console.log(props);
 
   return (
-    <table class="mx-auto w-[95%] text-sm text-left text-gray-500 dark:text-gray-400">
+    <table class="mx-auto w-100 text-sm text-left shadow-md text-gray-500 dark:text-gray-400">
       <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
         <tr>
           {csvResults[0]?.map((csvResult) => (
