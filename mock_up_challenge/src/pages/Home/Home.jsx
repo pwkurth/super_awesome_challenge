@@ -1,5 +1,4 @@
 import React from "react";
-import DocumentCartoon from "../../assets/home/document-cartoon.png";
 
 const Home = () => {
   return (
@@ -21,9 +20,6 @@ const Home = () => {
             He's nowhere in sight. Blast it! Pardon me, sir, but couldn't we go
             after him? It's too dangerous with all the Sandpeople around.
           </p>
-        </div>
-        <div class="container basis-1/2 p-20  items-center justify-center">
-          <img class="mx-auto" src={DocumentCartoon} alt={"Document Cartoon"} />
         </div>
       </div>
     </div>
