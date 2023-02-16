@@ -8,11 +8,14 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="App bg-[#222831]">
+    <div className="App h-[100vh] bg-gray-900">
+      <Navbar />
       <Landing />
-      {/* <Navbar />
-      <Home />
       <About />
+
+      {/* 
+
+
       <CSVPage /> */}
     </div>
   );
