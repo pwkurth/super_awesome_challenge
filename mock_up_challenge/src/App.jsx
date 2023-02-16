@@ -9,7 +9,7 @@ import "./index.css";
 function App() {
   return (
     <div className="App h-[100vh] bg-gray-900">
-      <Navbar />
+      {/* <Navbar /> */}
       <Landing />
       <About />
 
