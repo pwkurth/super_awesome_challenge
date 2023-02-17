@@ -1,7 +1,6 @@
 import React from "react";
 
 const Layout = (props) => {
-  console.log(props);
   if (props?.landing) {
     return <>{props.landing}</>;
   }
@@ -13,6 +12,13 @@ const Layout = (props) => {
       </>
     );
   }
+  if (props?.csv) {
+    return (
+      <>
+        {props.nav}
+        {props.csv}
+      </>
+    );
+  }
 };
-
 export default Layout;
