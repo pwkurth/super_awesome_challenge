@@ -20,23 +20,24 @@ const Home = () => {
             <h1>Did you hear that?</h1>
             <p class="text-left leading-relaxed text-xl ">
               They've shut down the main reactor. We'll be destroyed for sure.
-              This is madness! We're doomed! There'll be no escape for the
-              Princess this time. What's that? Artoo! Artoo-Detoo, where are
+              This is madness! We're <b>doomed!</b> There'll be no escape for
+              the Princess this time. What's that? Artoo! Artoo-Detoo, where are
               you? At last! Where have you been? They're heading in this
-              direction. Where are those transmissions you intercepted? What
-              have you done with those plans? We intercepted no transmissions.
+              direction. Where are those transmissions you <i>intercepted?</i>{" "}
+              What have you done with those plans? We intercepted no
+              transmissions.
               <blockquote class="text-2xl text-gray-800">
                 Aaah....This is a consular ship. Were on a diplomatic mission.
                 If this is a consular ship...were is the Ambassador?
               </blockquote>
             </p>
             <p class="text-left leading-relaxed text-xl ">
-              Commander, tear this ship apart until you've found those plans and
-              bring me the Ambassador. These astro-droids are getting quite out
-              of hand. Even I can't understand their logic at times. How could I
-              be so stupid? He's nowhere in sight. Blast it! Pardon me, sir, but
-              couldn't we go after him? It's too dangerous with all the
-              Sandpeople around.
+              Commander, tear this ship apart until you've found those{" "}
+              <b>plans</b> and bring me the <i>Ambassador. </i>These
+              astro-droids are getting quite out of hand. Even I can't
+              understand their logic at times. How could I be so stupid? He's
+              nowhere in sight. Blast it! Pardon me, sir, but couldn't we go
+              after him? It's too dangerous with all the Sandpeople around.
             </p>
             <figcaption class="flex items-center justify-center mt-6 space-x-3">
               <img
