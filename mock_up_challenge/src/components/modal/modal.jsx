@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Modal = (props) => {
   const navigate = useNavigate();
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [validForm, setValidForm] = useState(false);
 
   let parentCallBack = props?.parentCallBack;
   let openModal = false;
@@ -10,6 +13,24 @@ const Modal = (props) => {
   const handleCallBack = () => parentCallBack(openModal);
   const handleClick = () => {
     navigate("/home");
+  };
+
+  const handleEmail = () => {
+    setEmail(event.target.value);
+    formValid();
+  };
+
+  const handlePassword = () => {
+    setPassword(event.target.value);
+    formValid();
+  };
+
+  const formValid = () => {
+    if (password && email) {
+      setValidForm(true);
+    } else {
+      setValidForm(false);
+    }
   };
 
   return (
@@ -43,10 +64,16 @@ const Modal = (props) => {
             </h3>
             <form class="space-y-6">
               <div>
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label
+                  htmlFor="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
                   Your email
                 </label>
                 <input
+                  onChange={(event) => handleEmail(event)}
+                  value={email}
+                  id="email"
                   type="email"
                   class="text-sm rounded-lg  block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                   placeholder="Jb.thegreatest@aol.com"
@@ -54,10 +81,16 @@ const Modal = (props) => {
                 />
               </div>
               <div>
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label
+                  htmlFor="password"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
                   Your password
                 </label>
                 <input
+                  onChange={(event) => handlePassword(event)}
+                  value={password}
+                  id="password"
                   type="password"
                   placeholder="••••••••"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
@@ -65,8 +98,14 @@ const Modal = (props) => {
                 />
               </div>
               <button
-                onClick={() => handleClick()}
-                class="w-full text-white  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-800"
+                onClick={() => (validForm ? handleClick() : null)}
+                class={`w-full text-white 
+               ${
+                 validForm
+                   ? "opacity-1 cursor-pointer"
+                   : "opacity-60 cursor-not-allowed"
+               }
+                focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-800`}
               >
                 Login to your account
               </button>
