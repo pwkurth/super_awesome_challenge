@@ -30,6 +30,11 @@ function App() {
             path="/home"
             element={<Layout nav={<Navbar />} home={<Home />} />}
           />
+          <Route
+            exact
+            path="/csv"
+            element={<Layout nav={<Navbar />} csv={<CSVPage />} />}
+          />
         </Routes>
       </Router>
     </div>
