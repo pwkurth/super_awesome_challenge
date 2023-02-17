@@ -3,7 +3,6 @@ import CSVTable from "../csvtable/CSVTable";
 import { useCSVReader, formatFileSize } from "react-papaparse";
 
 export default function CSVReader() {
-  //   const setCSVData = useCSVStore((state) => state.setCSVData);
   const [csvResults, setCsvResults] = useState(null);
   const { CSVReader } = useCSVReader();
 
