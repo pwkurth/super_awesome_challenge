@@ -7,8 +7,8 @@ const CSVPage = () => {
   console.log(csvData?.data);
 
   return (
-    <div class=" flex mt-16 mr-16 ml-16 shadow-md bg-red-300">
-      <div class="mx-auto bg-white">
+    <div class=" flex mx-auto mt-16  w-1/2 ">
+      <div class="mx-auto  bg-gray-200  ">
         <CSVReader />
       </div>
     </div>
