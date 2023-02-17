@@ -1,10 +1,18 @@
 import React from "react";
-import Landing from "../../pages/Landing/Landing";
-import About from "../../pages/About/About";
-import Modal from "../modal/modal";
 
 const Layout = (props) => {
-  return <>{props.landing}</>;
+  console.log(props);
+  if (props?.landing) {
+    return <>{props.landing}</>;
+  }
+  if (props?.home) {
+    return (
+      <>
+        {props.nav}
+        {props.home}
+      </>
+    );
+  }
 };
 
 export default Layout;

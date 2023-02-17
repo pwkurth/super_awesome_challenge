@@ -25,7 +25,11 @@ function App() {
               />
             }
           />
-          <Route exact path="/home" element={<Home />} />
+          <Route
+            exact
+            path="/home"
+            element={<Layout nav={<Navbar />} home={<Home />} />}
+          />
         </Routes>
       </Router>
     </div>
