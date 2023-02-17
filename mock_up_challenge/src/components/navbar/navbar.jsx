@@ -23,9 +23,9 @@ const Navbar = () => {
             Home
           </span>
         </a>
-        <a href="/about" class="flex items-center ml-0 mr-10">
+        <a href="#" class="flex items-center ml-0 mr-10">
           <span class="self-center text-xl whitespace-nowrap dark:text-white hover:text-green-500">
-            About
+            CSV Reader
           </span>
         </a>
         <div class="flex items-center ml-auto mr-4">

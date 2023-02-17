@@ -2,9 +2,15 @@ import React from "react";
 
 import CardLoader from "../../components/cards/cardloader";
 
-const About = () => {
+const About = (props) => {
+  let opacity = props?.opacity;
+
   return (
-    <div class="bg-gray-900 border-2 border-indigo-200 rounded-lg w-8/12 h-[32rem] mt-2 mb-6 mx-auto ">
+    <div
+      class={`bg-gray-900 border-2 ${
+        opacity ? "opacity-20" : "opacity-1"
+      } border-indigo-200 rounded-lg w-8/12 h-[32rem] mt-2 mb-6 mx-auto `}
+    >
       <div class="grid grid-cols-3 gap-4 p-15 h-full place-items-center">
         <div class="ml-auto">
           <CardLoader
