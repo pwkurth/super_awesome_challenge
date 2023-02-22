@@ -15,18 +15,24 @@ const CSVTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        {csvResults?.slice(0, 15)?.map((csvResult, index) =>
-          index !== 0 && csvResult.length > 1 ? (
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        {csvResults?.slice(1, 15)?.map((csvResult) => (
+          <tr class="bg-gray-800 border-b">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              {csvResult[0]}
+            </th>
+            {csvResult?.slice(1).map((csvData) => (
               <th
                 scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
-                {csvResult[0]}
+                <>{csvData}</>
               </th>
-            </tr>
-          ) : null
-        )}
+            ))}
+          </tr>
+        ))}
       </tbody>
     </table>
   );
