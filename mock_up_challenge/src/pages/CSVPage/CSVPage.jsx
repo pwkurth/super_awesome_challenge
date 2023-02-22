@@ -1,14 +1,13 @@
 import React from "react";
-import CSVReader from "../../components/csvreader/CSVReader";
-import useCSVStore from "../../store/CSVStore";
+import CSVReader from "../../Components/CSVReader/CSVReader";
+import useCSVStore from "../../Store/CSVStore";
 
 const CSVPage = () => {
   const csvData = useCSVStore((state) => state.csvData);
-  console.log(csvData?.data);
 
   return (
-    <div class=" flex mt-16 mr-16 ml-16 shadow-md bg-red-300">
-      <div class="mx-auto bg-white">
+    <div class=" flex mx-auto mt-16  w-1/2 ">
+      <div class="mx-auto  bg-gray-200  ">
         <CSVReader />
       </div>
     </div>

@@ -2,11 +2,10 @@ import React from "react";
 
 const CSVTable = (props) => {
   const csvResults = props?.csvResults?.data;
-  console.log(props);
 
   return (
-    <table class="mx-auto w-100 text-sm text-left shadow-md text-gray-500 dark:text-gray-400">
-      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <table class="mx-auto max-h-full text-sm text-left shadow-md text-gray-400">
+      <thead class="text-xs  uppercase  bg-gray-700 text-gray-400">
         <tr>
           {csvResults[0]?.map((csvResult) => (
             <th scope="col" class="px-6 py-3">
@@ -16,19 +15,24 @@ const CSVTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        {csvResults?.map((csvResult, index) =>
-          index !== 0 && csvResult.length > 1 ? (
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        {csvResults?.slice(1, 15)?.map((csvResult) => (
+          <tr class="bg-gray-800 border-b">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              {csvResult[0]}
+            </th>
+            {csvResult?.slice(1).map((csvData) => (
               <th
                 scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
-                {csvResult[0]}
+                <>{csvData}</>
               </th>
-              {csvResult.forEach((i) => console.log(i))}
-            </tr>
-          ) : null
-        )}
+            ))}
+          </tr>
+        ))}
       </tbody>
     </table>
   );
