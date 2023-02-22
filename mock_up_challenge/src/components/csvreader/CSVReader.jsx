@@ -34,10 +34,10 @@ export default function CSVReader() {
                   <div class="flex-col relative z-10 bg-white h-auto w-auto">
                     <div class="flex-col p-1 items-center">
                       <span class="flex font-poppins mb-1 justify-center ">
-                        {formatFileSize(acceptedFile.size)}
+                        File Size: {formatFileSize(acceptedFile.size)}
                       </span>
                       <span class="flex font-poppins mb-1 justify-center ">
-                        {acceptedFile.name}
+                        File Name: {acceptedFile.name}
                       </span>
                     </div>
                     <div class="absolute bottom-14 w-auto p-1">
@@ -54,7 +54,7 @@ export default function CSVReader() {
                   </div>
                 </>
               ) : (
-                <div class="font-poppins mx-auto">Click to upload</div>
+                <div class="font-poppins mx-auto">Click to upload CSV</div>
               )}
             </div>
           </>
