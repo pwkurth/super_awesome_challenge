@@ -1,6 +1,6 @@
 import React from "react";
 
-import CardLoader from "../../components/cards/cardloader";
+import CardLoader from "../../Components/cards/cardloader";
 
 const About = (props) => {
   let opacity = props?.opacity;

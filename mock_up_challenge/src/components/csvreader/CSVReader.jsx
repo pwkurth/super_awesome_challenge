@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CSVTable from "../csvtable/CSVTable";
+import CSVTable from "../CSVTable/CSVTable";
 import { useCSVReader, formatFileSize } from "react-papaparse";
 
 export default function CSVReader() {

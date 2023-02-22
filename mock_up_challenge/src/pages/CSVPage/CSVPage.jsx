@@ -1,6 +1,6 @@
 import React from "react";
-import CSVReader from "../../components/csvreader/CSVReader";
-import useCSVStore from "../../store/CSVStore";
+import CSVReader from "../../Components/CSVReader/CSVReader";
+import useCSVStore from "../../Store/CSVStore";
 
 const CSVPage = () => {
   const csvData = useCSVStore((state) => state.csvData);

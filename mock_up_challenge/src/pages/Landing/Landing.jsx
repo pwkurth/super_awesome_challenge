@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DocumentCartoon from "../../assets/landing/document-cartoon.png";
-import Modal from "../../components/modal/modal";
+import Modal from "../../Components/Modal/Modal";
 import About from "../About/About";
 
 const Landing = () => {
