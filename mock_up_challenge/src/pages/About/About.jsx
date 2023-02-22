@@ -1,12 +1,18 @@
 import React from "react";
 
-import CardLoader from "../../components/cards/cardloader";
+import CardLoader from "../../Components/cards/cardloader";
 
-const About = () => {
+const About = (props) => {
+  let opacity = props?.opacity;
+
   return (
-    <div class="bg-green-100 h-[32rem] mt-16 mr-16 ml-16 shadow-md">
-      <div class="grid grid-cols-3 gap-4 h-full place-items-center">
-        <div>
+    <div
+      class={`bg-gray-900 border-2 ${
+        opacity ? "opacity-20" : "opacity-1"
+      } border-indigo-200 rounded-lg w-8/12 h-[32rem] mt-2 mb-6 mx-auto `}
+    >
+      <div class="grid grid-cols-3 gap-4 p-15 h-full place-items-center">
+        <div class="ml-auto">
           <CardLoader
             firstName={"Joe"}
             lastName={"Doe"}
@@ -24,7 +30,7 @@ const About = () => {
             favNumber={27}
           />
         </div>
-        <div>
+        <div class="mr-auto">
           <CardLoader
             firstName={"Jane"}
             lastName={"Doe"}

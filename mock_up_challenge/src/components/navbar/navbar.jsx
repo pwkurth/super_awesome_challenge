@@ -6,14 +6,10 @@ const Navbar = () => {
   const [userName] = useState("JB");
 
   return (
-    <nav class="py-3 bg-[#345b7e]">
+    <nav class="py-3 bg-gray-800">
       <div class="flex">
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          class="flex items-center mr-0 ml-10 "
-        >
-          <img src={genericLogo} class="h-6  sm:h-9 pr-2" alt="Flowbite Logo" />
+        <a href="/" class="flex items-center mr-0 ml-10 ">
+          <img src={genericLogo} class="h-6  sm:h-9 pr-2" alt="Generic Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap ml-2 dark:text-white hover:text-green-500">
             Best Website Ever
           </span>
@@ -23,9 +19,9 @@ const Navbar = () => {
             Home
           </span>
         </a>
-        <a href="/about" class="flex items-center ml-0 mr-10">
+        <a href="/csv" class="flex items-center ml-0 mr-10">
           <span class="self-center text-xl whitespace-nowrap dark:text-white hover:text-green-500">
-            About
+            CSV Reader
           </span>
         </a>
         <div class="flex items-center ml-auto mr-4">

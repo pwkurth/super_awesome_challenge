@@ -2,7 +2,7 @@ import React from "react";
 
 const CardLoader = (props) => {
   return (
-    <div class="relative flex flex-col font-poppins max-w-sm h-[24rem] p-6 rounded-lg  bg-gray-800 border-gray-700">
+    <div class="relative flex flex-col bg-gray-800 border border-indigo-500 font-poppins max-w-sm h-[24rem] p-6 rounded-lg">
       <div class="flex flex-row border-b-2 border-b-indigo-500">
         <h5 class="text-2xl  font-bold tracking-tight   text-white hover:text-green-300 ">
           {props.firstName} {props.lastName}
