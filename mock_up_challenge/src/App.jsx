@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Modal from "./components/modal/modal";
-import Navbar from "./components/navbar/navbar";
+import Modal from "./Components/Modal/Modal";
+import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import CSVPage from "./pages/CSVPage/CSVPage";
