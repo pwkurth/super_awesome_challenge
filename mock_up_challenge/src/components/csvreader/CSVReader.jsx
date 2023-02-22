@@ -6,6 +6,10 @@ export default function CSVReader() {
   const [csvResults, setCsvResults] = useState(null);
   const { CSVReader } = useCSVReader();
 
+  const clickRemove = () => {
+    setCsvResults(null);
+  };
+
   return (
     <div>
       <CSVReader
@@ -22,17 +26,17 @@ export default function CSVReader() {
         }) => (
           <>
             <div
-              class="flex flex-col my-auto p-5 justify-center  h-auto border border-sky-500 hover:bg-slate-500"
+              class="flex flex-col my-auto p-5 justify-center  h-auto border border-gray-500 hover:bg-slate-500"
               {...getRootProps()}
             >
               {acceptedFile ? (
                 <>
                   <div class="flex-col relative z-10 bg-white h-auto w-auto">
                     <div class="flex-col p-1 items-center">
-                      <span class="flex font-poppins mb-1 justify-center bg-gray-200">
+                      <span class="flex font-poppins mb-1 justify-center ">
                         {formatFileSize(acceptedFile.size)}
                       </span>
-                      <span class="flex font-poppins mb-1 justify-center bg-gray-200">
+                      <span class="flex font-poppins mb-1 justify-center ">
                         {acceptedFile.name}
                       </span>
                     </div>
@@ -43,10 +47,9 @@ export default function CSVReader() {
                       class="absolute h-23 right-6 top-6 w-23"
                       {...getRemoveFileProps()}
                     >
-                      <Remove
-                        onClick={() => setCsvResults(null)}
-                        color={"#A01919"}
-                      />
+                      <button onClick={() => clickRemove()}>
+                        <Remove color={"#A01919"} />
+                      </button>
                     </div>
                   </div>
                 </>
