@@ -2,7 +2,6 @@ import React from "react";
 
 const CSVTable = (props) => {
   const csvResults = props?.csvResults?.data;
-  console.log(props);
 
   return (
     <table class="mx-auto max-h-full text-sm text-left shadow-md text-gray-400">

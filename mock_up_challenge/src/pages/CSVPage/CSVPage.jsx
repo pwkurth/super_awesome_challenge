@@ -4,7 +4,6 @@ import useCSVStore from "../../store/CSVStore";
 
 const CSVPage = () => {
   const csvData = useCSVStore((state) => state.csvData);
-  console.log(csvData?.data);
 
   return (
     <div class=" flex mx-auto mt-16  w-1/2 ">
