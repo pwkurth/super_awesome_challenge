@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="super_awesome_challenge/"
             element={
               <Layout
                 landing={<Landing />}
@@ -27,12 +27,12 @@ function App() {
           />
           <Route
             exact
-            path="/home"
+            path="super_awesome_challenge/home"
             element={<Layout nav={<Navbar />} home={<Home />} />}
           />
           <Route
             exact
-            path="/csv"
+            path="super_awesome_challenge/csv"
             element={<Layout nav={<Navbar />} csv={<CSVPage />} />}
           />
         </Routes>
