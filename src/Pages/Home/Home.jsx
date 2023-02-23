@@ -26,11 +26,11 @@ const Home = () => {
               direction. Where are those transmissions you <i>intercepted?</i>{" "}
               What have you done with those plans? We intercepted no
               transmissions.
-              <blockquote className="text-2xl text-gray-800">
-                Aaah....This is a consular ship. Were on a diplomatic mission.
-                If this is a consular ship...were is the Ambassador?
-              </blockquote>
             </p>
+            <blockquote className="text-2xl text-gray-800">
+              Aaah....This is a consular ship. Were on a diplomatic mission. If
+              this is a consular ship...were is the Ambassador?
+            </blockquote>
             <p className="text-left leading-relaxed text-xl ">
               Commander, tear this ship apart until you've found those{" "}
               <b>plans</b> and bring me the <i>Ambassador. </i>These

@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="flex">
         <a href="/" className="flex items-center mr-0 ml-10 ">
           <img
-            src=classNamericLogo}
+            src={genericLogo}
             className="h-6  sm:h-9 pr-2"
             alt="Generic Logo"
           />
