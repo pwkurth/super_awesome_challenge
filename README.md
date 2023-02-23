@@ -64,3 +64,7 @@ Tailwind should now be installed!
 ```
 npm run dev
 ```
+
+####
+
+\*Note build is WIP
