@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
+import Layout from "./Components/Layout/Layout";
 import Modal from "./Components/Modal/Modal";
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import CSVPage from "./pages/CSVPage/CSVPage";
-import Landing from "./pages/Landing/Landing";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import CSVPage from "./Pages/CSVPage/CSVPage";
+import Landing from "./Pages/Landing/Landing";
 import "./index.css";
 
 function App() {
