@@ -36,18 +36,18 @@ const Modal = (props) => {
   return (
     <div
       tabIndex="-1"
-      class="absolute w-full p-4  md:inset-0 h-modal md:h-full "
+      className="absolute w-full p-4  md:inset-0 h-modal md:h-full "
     >
-      <div class="relative font-poppins w-full h-full mx-auto mt-32 max-w-md md:h-auto ">
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div className="relative font-poppins w-full h-full mx-auto mt-32 max-w-md md:h-auto ">
+        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
           <button
             onClick={() => handleCallBack()}
             type="button"
-            class="absolute top-3 right-2.5 text-green-400 bg-transparent hover:bg-slate-600 hover:text-green-600 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center "
+            className="absolute top-3 right-2.5 text-green-400 bg-transparent hover:bg-slate-600 hover:text-green-600 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center "
           >
             <svg
               aria-hidden="true"
-              class="w-5 h-5"
+              className="w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -58,15 +58,15 @@ const Modal = (props) => {
               ></path>
             </svg>
           </button>
-          <div class="px-6 py-6 lg:px-8">
-            <h3 class="mb-4 text-xl font-medium text-white hover:text-green-400">
+          <div className="px-6 py-6 lg:px-8">
+            <h3 className="mb-4 text-xl font-medium text-white hover:text-green-400">
               Sign in to our platform
             </h3>
-            <form class="space-y-6">
+            <form className="space-y-6">
               <div>
                 <label
                   htmlFor="email"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Your email
                 </label>
@@ -75,7 +75,7 @@ const Modal = (props) => {
                   value={email}
                   id="email"
                   type="email"
-                  class="text-sm rounded-lg  block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
+                  className="text-sm rounded-lg  block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                   placeholder="Jb.thegreatest@aol.com"
                   required
                 />
@@ -83,7 +83,7 @@ const Modal = (props) => {
               <div>
                 <label
                   htmlFor="password"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Your password
                 </label>
@@ -93,13 +93,13 @@ const Modal = (props) => {
                   id="password"
                   type="password"
                   placeholder="••••••••"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   required
                 />
               </div>
               <button
                 onClick={() => (validForm ? handleClick() : null)}
-                class={`w-full text-white 
+                className={`w-full text-white 
                ${
                  validForm
                    ? "opacity-1 cursor-pointer"

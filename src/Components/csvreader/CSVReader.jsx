@@ -26,25 +26,25 @@ export default function CSVReader() {
         }) => (
           <>
             <div
-              class="flex flex-col my-auto p-5 justify-center  h-auto border border-gray-500 hover:bg-slate-500"
+              className="flex flex-col my-auto p-5 justify-center  h-auto border border-gray-500 hover:bg-slate-500"
               {...getRootProps()}
             >
               {acceptedFile ? (
                 <>
-                  <div class="flex-col relative z-10 bg-white h-auto w-auto">
-                    <div class="flex-col p-1 items-center">
-                      <span class="flex font-poppins mb-1 justify-center ">
+                  <div className="flex-col relative z-10 bg-white h-auto w-auto">
+                    <div className="flex-col p-1 items-center">
+                      <span className="flex font-poppins mb-1 justify-center ">
                         File Size: {formatFileSize(acceptedFile.size)}
                       </span>
-                      <span class="flex font-poppins mb-1 justify-center ">
+                      <span className="flex font-poppins mb-1 justify-center ">
                         File Name: {acceptedFile.name}
                       </span>
                     </div>
-                    <div class="absolute bottom-14 w-auto p-1">
+                    <div className="absolute bottom-14 w-auto p-1">
                       <ProgressBar />
                     </div>
                     <div
-                      class="absolute h-23 right-6 top-6 w-23"
+                      className="absolute h-23 right-6 top-6 w-23"
                       {...getRemoveFileProps()}
                     >
                       <button onClick={() => clickRemove()}>
@@ -54,7 +54,7 @@ export default function CSVReader() {
                   </div>
                 </>
               ) : (
-                <div class="font-poppins mx-auto">Click to upload CSV</div>
+                <div className="font-poppins mx-auto">Click to upload CSV</div>
               )}
             </div>
           </>

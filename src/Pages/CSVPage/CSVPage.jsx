@@ -6,8 +6,8 @@ const CSVPage = () => {
   const csvData = useCSVStore((state) => state.csvData);
 
   return (
-    <div class=" flex mx-auto mt-16  w-1/2 ">
-      <div class="mx-auto  bg-gray-200  ">
+    <div className=" flex mx-auto mt-16  w-1/2 ">
+      <div className="mx-auto  bg-gray-200  ">
         <CSVReader />
       </div>
     </div>
