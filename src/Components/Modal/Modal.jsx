@@ -12,7 +12,7 @@ const Modal = (props) => {
 
   const handleCallBack = () => parentCallBack(openModal);
   const handleClick = () => {
-    navigate("/home");
+    navigate("/super_awesome_challenge/home");
   };
 
   const handleEmail = () => {
