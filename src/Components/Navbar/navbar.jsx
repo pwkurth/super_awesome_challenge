@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import avatarIcon from "../../assets/navbar/bussinyaak.png";
-import genericLogo from "../../assets/navbar/black-mesa-logo.svg";
+import avatarIcon from "../../Assets/Navbar/bussinyaak.png";
+import genericLogo from "../../Assets/Navbar/black-mesa-logo.svg";
 
 const Navbar = () => {
   const [userName] = useState("JB");
