@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DocumentCartoon from "../../assets/landing/document-cartoon.png";
+import DocumentCartoon from "../../Assets/Landing/document-cartoon.png";
 import Modal from "../../Components/Modal/Modal";
 import About from "../About/About";
 
