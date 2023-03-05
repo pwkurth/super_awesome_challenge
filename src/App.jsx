@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Modal from "./Components/Modal/Modal";
 import Navbar from "./Components/Navbar/Navbar";
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/super_awesome_challenge/"
+            path="/"
             element={
               <Layout
                 landing={<Landing />}
