@@ -8,7 +8,10 @@ const Navbar = () => {
   return (
     <nav className="py-3 bg-gray-800">
       <div className="flex">
-        <a href="/" className="flex items-center mr-0 ml-10 ">
+        <a
+          href="/super_awesome_challenge/"
+          className="flex items-center mr-0 ml-10 "
+        >
           <img
             src={genericLogo}
             className="h-6  sm:h-9 pr-2"
