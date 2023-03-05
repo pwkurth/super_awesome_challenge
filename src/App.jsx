@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/super_awesome_challenge/"
             element={
               <Layout
                 landing={<Landing />}
