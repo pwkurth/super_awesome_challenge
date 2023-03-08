@@ -8,10 +8,7 @@ const Navbar = () => {
   return (
     <nav className="py-3 bg-gray-800">
       <div className="flex">
-        <a
-          href="#/super_awesome_challenge/"
-          className="flex items-center mr-0 ml-10 "
-        >
+        <a href="/" className="flex items-center mr-0 ml-10 ">
           <img
             src={genericLogo}
             className="h-6  sm:h-9 pr-2"
@@ -21,18 +18,12 @@ const Navbar = () => {
             Best Website Ever
           </span>
         </a>
-        <a
-          href="#/super_awesome_challenge/home"
-          className="flex items-center ml-10 mr-10"
-        >
+        <a href="/home" className="flex items-center ml-10 mr-10">
           <span className="self-center text-xl whitespace-nowrap dark:text-white hover:text-green-500 ">
             Home
           </span>
         </a>
-        <a
-          href="#/super_awesome_challenge/csv"
-          className="flex items-center ml-0 mr-10"
-        >
+        <a href="/csv" className="flex items-center ml-0 mr-10">
           <span className="self-center text-xl whitespace-nowrap dark:text-white hover:text-green-500">
             CSV Reader
           </span>
